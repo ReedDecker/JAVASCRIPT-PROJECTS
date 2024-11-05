@@ -3,7 +3,7 @@ function Get_Date() {
         document.getElementById("Greeting").innerHTML = "How are you doing today?";
     }
 }
-///Conditional statement that includes "if" to show message basd on what time of day you click 
+///Conditional statement that includes "if" to show message based on what time of day you click 
 
 function Senior_Function() {
     Age = document.getElementById("Age").value;
