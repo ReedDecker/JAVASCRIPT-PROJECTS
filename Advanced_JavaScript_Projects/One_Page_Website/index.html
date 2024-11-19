@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Constantinople</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Constantinople">
+    <meta name="keywords" content="Constantinople, Crusades, Byzantine, Byzantium, History, Constantine, Emperor">
+    <meta name="author" content="Reed Decker">
+    <link rel="stylesheet" type="text/css" href="CSS/One_Page_Website.css">
+    <script src="JS/One_Page_Website.js" defer></script>
+</head>
+
+<body style="background-color:rgb(200, 200, 200);"></body>
+<!--NAVBAR-->
+<div>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    <ul>
+        <a href="#Lightbox">
+            <li>Constantinople Lightbox</li>
+        </a>
+        <a href="#Video">
+            <li>Constantinople Video</li>
+        </a>
+    </ul>
+    <!--HEADER-->
+    <header>
+        <div>
+            <h1>The Great City of Constantinople</h1>
+        </div>
+    </header>
+    <blockquote cite="https://www.goodreads.com/author/quotes/133064.Roger_Crowley">
+        <p>"For on earth there is no such splendor and beauty, and we are at a loss how to describe it.
+            We only know that there God dwells among men." -Roger Crowley</p>
+    </blockquote>
+    <section>
+        <div>
+            <h2>History of Constantinople...</h2>
+            <p>Constantinople is an ancient city in
+                modern-day Turkey that’s now known as Istanbul.
+                First settled in the seventh century B.C.,<br>Constantinople developed
+                into a thriving port thanks to its prime geographic location
+                between Europe and Asia and its natural harbor.<br> In A.D. 330, it became
+                the site of Roman EmperorConstantine’s “New Rome,”a Christian city of immense wealth and magnificent
+                architecture.
+            </p>
+        </div>
+    </section>
+    <div>
+
+        <body>
+
+            <h2 id="Lightbox" style="text-align:center">Constantinople Lightbox</h2>
+
+            <div class="row">
+                <div class="column">
+                    <img src="Constantinople_Images/Const1_Lrg.jpg" style="width:100%"
+                        onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Constantinople_Images/Const2_Lrg.jpg" style="width:100%"
+                        onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Constantinople_Images/Const3_Lrg.jpg" style="width:100%"
+                        onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="Constantinople_Images/Const4_Lrg.jpg" style="width:100%"
+                        onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="Constantinople_Images/Const1_Lrg_Wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="Constantinople_Images/Const2_Lrg_Wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="Constantinople_Images/Const3_Lrg_Wide.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="Constantinople_Images/Const4_Lrg_Wide.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+
+                    <div class="column">
+                        <img class="demo cursor" src="Constantinople_Images/Const1_Sml.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="Hippodrome">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Constantinople_Images/Const2_Sml.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="Port of Constantinople">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Constantinople_Images/Const3_Sml.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="Istanbul at Dusk">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Constantinople_Images/Const4_Sml.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="Illustration of Constantinople">
+                    </div>
+                </div>
+            </div>
+            <!--VIDEOS-->
+            <section>
+                <!--CONSTANTINOPLE VIDEO-->
+                <div id="Video">
+                    <h3>Constantinople Video</h3>
+                    <iframe width="1000" height="600"
+                        src="https://www.youtube.com/embed/Ps8_DLcyR0E?si=RWXM0DHGnEegE0TW" title="YouTube video player"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                    gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+            <!--CONTACT-->
+            <header>
+                <div class="container" id="contact">
+                    <h1>Contact Us</h1>
+                </div>
+            </header>
+            <!--FORM-->
+            <section>
+                <div>
+                    <h3>Please provide your contact information
+                        if you would like to learn more about this Great City...
+                    </h3>
+                    <div>
+                        <form>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                            <input type="email" placeholder="Email">
+                            <input type="tel" placeholder="Phone Number">
+                            <input type="checkbox" placeholder="Newsletter">
+                            <label for="Newsletter">Would you like to receive our monthly Papyrus Scroll?</label><br>
+                            <textarea placeholder="Type message here..."></textarea><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--FOOTER-->
+            <footer>
+                <img src="Constantinople_Images/papyrusscroll.jpg" width="1000" height="500" alt="Papyrus Scroll">
+                <table>
+                    <tr>
+                        <td>
+                            <p>Constantine Free Press &copy;&nbsp;&nbsp;Hagia Sophia Way
+                                Istanbul,Turkey/&nbsp;&nbsp;Tel.
+                                +53-922-714-8743</p>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </body>
+
+</html>
