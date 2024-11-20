@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Basic AJAX Demo</title>
+	<link rel="stylesheet" href="style.css"><!--Links CSS file for form styling-->
+
+</head>
+
+<body>
+	<div class='container' id="content">
+		<h1>Sign up for our Newsletter</h1>
+		<div class="display">
+			<form>
+				<input id="fullName" placeholder="Name"> <!--Input filed for user to enter information-->
+				<input placeholder="Email">
+				<input type="button" class="btn" value="Submit" onclick="getMsg();" />
+				<!--Onclick getMsg() calls AJAX to retrieve message by given JS function-->
+			</form>
+		</div>
+	</div>
+	<script src="ajaxScript.js"></script> <!--Links AJAX JS file-->
+</body>
+
+</html>
