@@ -39,4 +39,34 @@ function buyTickets() {
     displaySelectedMovieOptions();
 }
 
+///JQUERY///
 
+///Shrinks header size when the document is scrolled down by 80 pixels///
+$(document).on("scroll", function () {
+    ///WHen the webpage is scrolled down from the top by 50px this if statement will trigger///
+    if ($(document).scrollTop() > 50) {
+        ///Once the 50px requirement has been met add the nav-shrink///  
+        ///class selector to the same HTML element that has the nav class///
+        $("nav").addClass("nav-shrink");
+        ///Adjust the position of the mobile drop menu to to accomodate the new height decrease///
+        $("div.navbar-collapse").css("margin-top", "-6px");
+    } else {
+        ///If the webpage jas not been scrolled down or is back at the top the nav-shrink/// 
+        ///class selector is removed fromt the HTML element with the nav class selector 
+        $("nav").removeClass("nav-shrink");
+        ///The margin for the drop down menu is now returned to it's original amount///
+        $("div.navbar-collapse").css("margin-top", "14px");
+    }
+});
+
+///Close mobile menu when a navigation link is clicked///
+$(document).ready(function () {
+    ///On click when an element contains just the nav-link class and not the dropdown-toggle and then///
+    ///also close when an element with the calss .dropdown-item (each movie link) has been clicked///
+    $(".navbar-collapse").on('click', 'nav-link:not(".dropdown-toggle"), .dropdown-item', function () {
+        ///Collapse the navbar when a link or dropdown item is clicked///
+        $(".navbar-collapse").collapse('hide');
+
+    });
+
+});
